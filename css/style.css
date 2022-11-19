@@ -6,7 +6,7 @@ html, body {
     min-height: 100vh;
     font-family: 'Jua';
     background-image: url(../images/paper-background.png);
-    background-size: cover;
+    background-size: contain;
     margin: 0;
 }
 
