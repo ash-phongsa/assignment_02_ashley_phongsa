@@ -48,6 +48,7 @@ html, body {
     grid-gap: 20px;
     padding: 100px 50px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .flex-jobs {
     display: flex;
