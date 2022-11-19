@@ -79,6 +79,7 @@ html, body {
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     padding: 25px 120px;
+    margin-bottom: 30px;
 }
 img {
     max-height: 100%;
