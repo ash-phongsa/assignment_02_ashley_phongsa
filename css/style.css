@@ -39,7 +39,7 @@ html, body {
 .flex-jobs-sect {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    column-gap: 10px;
 }
 .grid-jobs-main {
     display: grid;
