@@ -130,6 +130,7 @@ body { min-height: 100vh;}
 min-height: 100%;
 display: flex;
 flex-direction: column;
+justify-content: center;
 }
 main {
 flex-grow: 1;
@@ -231,7 +232,7 @@ a:hover {
     list-style-type: decimal;
     font-family: 'Annie Use Your Telescope';
     font-size: 36px;
-    margin: 0px 100px;
+    padding: 0px 100px;
 }
 #delivery .mechanics-list {
     font-size: 30px;
@@ -313,9 +314,6 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
     .lined {
-        .wrapper {
-        padding: 10px 50px;
-    }
         background-image: url(../images/lined_paper_blank.jpg);
         background-size: cover;
         min-height: 1107px;
@@ -335,12 +333,34 @@ a:hover {
         justify-items: center;
         margin-bottom: 20px;
     }
+    .flex-jobs-sect {
+        justify-items: center;
+    }
     #about .lined {
         background-image: url(../images/lined_paper_plain.png);
-        min-height: 1430px;
+        min-height: 700px;
         max-height: 100%;
     }
-    
+    #gameplay p {
+        padding: 10px 60px;
+    }
+    #gameplay img {
+        padding: 0px 60px;
+    }
+    .grid-gameplay {
+        grid-template-columns: none;
+    }
+    .mechanics-list {
+        padding: 0px 50px;
+        margin: 0;
+        font-size: 32px;
+    }
+    #supplier .mechanics-list {
+        font-size: 27px;
+    }
+    #delivery .mechanics-list {
+        font-size: 27px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -453,14 +473,34 @@ a:hover {
     }
     h1 {
         font-size: 36px;
+        padding: 0px 50px;
     }
     .primary-nav ul {
         column-gap: 10px;
         justify-content: center;
     }
+    #mechanics h1 {
+        font-size: 30px;
+    }
+    #supplier .mechanics-list {
+        font-size: 25px;
+    }
+    #delivery .mechanics-list {
+        font-size: 25px;
+    }
+    
 }
 @media screen and (max-width: 900px){
+    .wrapper {
+        padding: 10px 50px;
+    }
     h1 {
         font-size: 30px;
+    }
+    .grid-header {
+        padding-top: 90px;
+    }
+    #gameplay p {
+        font-size: 26px;
     }
 }
