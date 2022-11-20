@@ -346,6 +346,10 @@ a:hover {
         min-height: 700px;
         max-height: 100%;
     }
+    #mechanics .to-do {
+        min-height: 300px;
+        max-height: 100%;
+    }
     #gameplay p {
         padding: 10px 60px;
     }
@@ -412,6 +416,11 @@ a:hover {
         grid-template-rows: 1fr 1fr;
         align-items: center;
         max-width: 650px;
+    }
+    #mechanics .grid-gameplay {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
     }
     .primary-nav {
         align-items: center;
@@ -548,7 +557,7 @@ a:hover {
         font-size: 24px;
     }
     #mechanics img {
-        max-width: 60%;
+        max-width: 100%;
     }
     #mechanics .to-do ul{
         font-size: 24px;
@@ -564,5 +573,4 @@ a:hover {
     #about h1 {
         padding: 30px 20px;
     }
-    
 }
