@@ -466,15 +466,6 @@ a:hover {
         justify-content: center;
         margin-bottom: 20px;
     }
-    .button {
-        width: 100%;
-        padding: 30px 20px;
-        display: inline-block;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-    }
     h1 {
         font-size: 36px;
         padding: 0px 50px;
@@ -501,16 +492,48 @@ a:hover {
     .header-wrapper {
         padding: 0;
     }
+    p {
+        padding: 30px;
+        font-size: 26px;
+    }
     h1 {
-        font-size: 30px;
+        font-size: 27px;
     }
     .grid-header {
         padding-top: 90px;
+    }
+    .button {
+        width: 100%;
+        padding: 30px 20px;
+        display: inline-block;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
     }
     #gameplay p {
         font-size: 26px;
     }
     #gameplay .to-do ul {
-        font-size: 26px;
+        font-size: 24px;
+    }
+    .grid-mechimgs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+        padding: 25px 50px;
+        margin-bottom: 30px;
+    }
+    #gameplay h1 {
+        font-size: 30px;
+    }
+    #mechanics img {
+        max-width: 60%;
+    }
+    #mechanics .to-do ul{
+        font-size: 24px;
+    }
+    .mechanics-list {
+        font-size: 25px;
     }
 }
