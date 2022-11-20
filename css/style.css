@@ -339,14 +339,19 @@ a:hover {
     }
     
 }
+
 @media screen and (max-width: 1000px) {
+    .container {
+        max-width: 1440px;
+        margin: auto;
+    }
     .wrapper {
         padding: 10px 110px;
     }
     .grid-main {
-        display: grid;
-        grid-template-columns: 2fr 5fr;
-        grid-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
         justify-content: center;
         padding-bottom: 30px;
     }
@@ -366,26 +371,23 @@ a:hover {
         grid-gap: 0;
         justify-items: center;
         max-height: 700px;
+        max-width: 650px;
     }
     .grid-nav {
         display: grid;
         grid-template-rows: 1fr 1fr;
         align-items: center;
+        max-width: 650px;
     }
     .primary-nav {
         align-items: center;
+        max-width: 650px;
+        grid-gap: 10px;
     }
     #jobs .lined {
         background-image: url(../images/lined_paper_blank.jpg);
         min-height: 630px;
         max-height: 100%;
-    }
-    .grid-main {
-        display: grid;
-        grid-template-columns: none;
-        grid-gap: 10px;
-        justify-content:left;
-        padding-bottom: 30px;
     }
     .lined {
         background-image: url(../images/lined_paper_blank.jpg);
@@ -394,9 +396,9 @@ a:hover {
         max-height: 100%;
     }
     .to-do {
-        background-image: url(../images/yellow-paper.jpg);
+        background-image: url(../images/yellow-paper_plain.jpg);
         min-height: 500px;
-        max-height: 100%;
+        max-height: 500px;
     }
     .grid-about {
         display: grid;
@@ -429,4 +431,45 @@ a:hover {
         column-gap: 10px;
         justify-items: center;
     }
+    .grid-jobs-main {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        padding: 100px 50px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 770px){
+    .grid-header {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 0;
+        justify-items: center;
+        max-height: 700px;
+    }
+    .grid-nav {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+    .primary-nav ul {
+        column-gap: 10px;
+        justify-content: center;
+    }
+    .button {
+        width: 100%;
+        padding: 30px 20px;
+        display: inline-block;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+      
 }
