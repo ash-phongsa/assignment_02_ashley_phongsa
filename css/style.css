@@ -419,4 +419,15 @@ a:hover {
     p {
         font-size: 32px;
     }
+    .grid-jobs-notes {
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 10px;
+        padding-bottom: 30px;
+    }
+    .flex-jobs-sect {
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }
 }
