@@ -313,6 +313,9 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
     .lined {
+        .wrapper {
+        padding: 10px 50px;
+    }
         background-image: url(../images/lined_paper_blank.jpg);
         background-size: cover;
         min-height: 1107px;
