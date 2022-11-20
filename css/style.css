@@ -75,7 +75,8 @@ html, body {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    max-height: 1107px;
+    min-height: 500px;
+    max-height: 100%px;
 }
 .grid-mechimgs {
     display: grid;
@@ -365,6 +366,12 @@ a:hover {
     #delivery .mechanics-list {
         font-size: 27px;
     }
+    #gameplay .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+    }
+    #mechanics .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -428,9 +435,10 @@ a:hover {
         max-height: 700px;
     }
     .grid-about {
-        display: grid;
-        grid-template-columns: none;
-        grid-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
         padding-bottom: 30px;
     }
     #about .to-do {
@@ -483,7 +491,9 @@ a:hover {
     #delivery .mechanics-list {
         font-size: 25px;
     }
-    
+    #mechanics img {
+        max-width: 60%;
+    }
 }
 @media screen and (max-width: 900px){
     .wrapper {
@@ -494,7 +504,10 @@ a:hover {
     }
     p {
         padding: 30px;
-        font-size: 26px;
+        font-size: 30px;
+    }
+    #about p {
+        padding: 20px;
     }
     h1 {
         font-size: 27px;
@@ -527,6 +540,13 @@ a:hover {
     #gameplay h1 {
         font-size: 30px;
     }
+    #mechanics h1 {
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+    #mechanics h2 {
+        font-size: 24px;
+    }
     #mechanics img {
         max-width: 60%;
     }
@@ -534,6 +554,14 @@ a:hover {
         font-size: 24px;
     }
     .mechanics-list {
-        font-size: 25px;
+        font-size: 30px;
+    }
+    #about .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+        min-height: 500px;
+        max-height: 100%;
+    }
+    #about h1 {
+        padding: 30px 20px;
     }
 }
