@@ -439,6 +439,22 @@ a:hover {
         justify-content: center;
         margin-bottom: 20px;
     }
+    .button {
+        width: 100%;
+        padding: 30px 20px;
+        display: inline-block;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .primary-nav ul {
+        column-gap: 10px;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 900px){
     .grid-header {
@@ -455,21 +471,6 @@ a:hover {
         grid-template-rows: 1fr 1fr;
         align-items: center;
     }
-    .primary-nav ul {
-        column-gap: 10px;
-        justify-content: center;
-    }
-    .button {
-        width: 100%;
-        padding: 30px 20px;
-        display: inline-block;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    h1 {
-        font-size: 36px;
-    }
+   
       
 }
