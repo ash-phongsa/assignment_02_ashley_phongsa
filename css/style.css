@@ -398,7 +398,7 @@ a:hover {
     .to-do {
         background-image: url(../images/yellow-paper_plain.jpg);
         min-height: 500px;
-        max-height: 500px;
+        max-height: 700px;
     }
     .grid-about {
         display: grid;
