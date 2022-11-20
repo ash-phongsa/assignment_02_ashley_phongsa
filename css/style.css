@@ -29,7 +29,7 @@ html, body {
     padding-top: 50px;
     display: grid;
     grid-template-columns: 2fr 5fr;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 .grid-nav {
     display: grid;
@@ -80,6 +80,12 @@ html, body {
     grid-gap: 20px;
     padding: 25px 120px;
     margin-bottom: 30px;
+}
+.grid-about {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 10px;
+    padding-bottom: 30px;
 }
 img {
     max-height: 100%;
@@ -290,7 +296,54 @@ a:hover {
     padding: 20px 40px;
 }
 
+@media screen and (max-width: 1300px) {
+    .lined {
+        background-image: url(../images/lined_paper_plain.png);
+        background-size: cover;
+        min-height: 1107px;
+        max-height: 100%;
+    }
+    #about .lined {
+        background-image: url(../images/lined_paper_plain.png);
+        min-height: 1430px;
+        max-height: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+        background-size: cover;
+        min-height: 1107px;
+        max-height: 100%;
+    }
+    #jobs .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+        min-height: 300px;
+        max-height: 100%;
+    }
+    .grid-jobs-main {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 100px 50px;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+    #about .lined {
+        background-image: url(../images/lined_paper_plain.png);
+        min-height: 1430px;
+        max-height: 100%;
+    }
+    
+}
+
 @media screen and (max-width: 1000px) {
+    .wrapper {
+        padding: ;
+    }
     .grid-main {
         display: grid;
         grid-template-columns: 2fr 5fr;
@@ -301,7 +354,7 @@ a:hover {
     .logo {
         max-width: 100%;
         padding: 0;
-        justify-content: center;
+        align-items: center;
     }
     h1 {
         text-align: center;
@@ -310,9 +363,9 @@ a:hover {
         padding-top: 50px;
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 0;
-        align-items: center;
+        justify-items: center;
         max-height: 700px;
     }
     .grid-nav {
@@ -322,5 +375,48 @@ a:hover {
     }
     .primary-nav {
         align-items: center;
+    }
+    .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+        background-size: cover;
+        min-height: 1107px;
+        max-height: 100%;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 10px;
+        justify-content:left;
+        padding-bottom: 30px;
+    }
+    .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+        background-size: cover;
+        min-height: 700px;
+        max-height: 100%;
+    }
+    .to-do {
+        background-image: url(../images/yellow-paper.jpg);
+        min-height: 500px;
+        max-height: 100%;
+    }
+    .grid-about {
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 10px;
+        padding-bottom: 30px;
+    }
+    #about .to-do {
+        background-image: url(../images/yellow-paper_about.jpg);
+        min-height: 500px;
+        max-height: 100%;
+    }
+    #about .lined {
+        background-image: url(../images/lined_paper_blank.jpg);
+        min-height: 1430px;
+        max-height: 100%;
+    }
+    p {
+        font-size: 32px;
     }
 }
