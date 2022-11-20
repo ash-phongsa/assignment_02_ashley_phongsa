@@ -339,10 +339,9 @@ a:hover {
     }
     
 }
-
 @media screen and (max-width: 1000px) {
     .wrapper {
-        padding: ;
+        padding: 10px 110px;
     }
     .grid-main {
         display: grid;
