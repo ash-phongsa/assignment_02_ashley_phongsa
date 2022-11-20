@@ -13,6 +13,9 @@ html, body {
 .wrapper {
     padding: 10px 110px;
 }
+.header-wrapper {
+    padding: 10px 110px;
+}
 .container {
     max-width: 1440px;
     margin: auto;
@@ -30,6 +33,7 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 5fr;
     justify-content: space-evenly;
+    margin: 0;
 }
 .grid-nav {
     display: grid;
