@@ -376,10 +376,9 @@ a:hover {
     .primary-nav {
         align-items: center;
     }
-    .lined {
+    #jobs .lined {
         background-image: url(../images/lined_paper_blank.jpg);
-        background-size: cover;
-        min-height: 1107px;
+        min-height: 630px;
         max-height: 100%;
     }
     .grid-main {
@@ -429,13 +428,6 @@ a:hover {
         display: flex;
         flex-direction: column;
         column-gap: 10px;
-    }
-     .grid-jobs-main {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 20px;
-        padding: 100px 100px;
-        justify-content: center;
-        margin-bottom: 20px;
+        justify-items: center;
     }
 }
